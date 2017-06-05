@@ -13,7 +13,41 @@
 		9A0F8A9B1EE51C0B00485820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0F8A991EE51C0B00485820 /* Main.storyboard */; };
 		9A0F8A9D1EE51C0B00485820 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A0F8A9C1EE51C0B00485820 /* Assets.xcassets */; };
 		9A0F8AA01EE51C0B00485820 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A0F8A9E1EE51C0B00485820 /* LaunchScreen.storyboard */; };
+		9ACCB2D31EE537FA00F54D39 /* libProtocolBuffers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ACCB2CC1EE537F400F54D39 /* libProtocolBuffers.a */; };
+		9ACCB2D81EE5429100F54D39 /* Person.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCB2D61EE5429100F54D39 /* Person.pbobjc.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9ACCB2D91EE5429100F54D39 /* Person.proto in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCB2D71EE5429100F54D39 /* Person.proto */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9ACCB2CB1EE537F400F54D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ACCB2C31EE537F400F54D39 /* ProtocolBuffers_iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7461B52E0F94FAF800A0C422;
+			remoteInfo = ProtocolBuffers;
+		};
+		9ACCB2CD1EE537F400F54D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ACCB2C31EE537F400F54D39 /* ProtocolBuffers_iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BBEA4A6147C727100C4ADB7;
+			remoteInfo = UnitTests;
+		};
+		9ACCB2CF1EE537F400F54D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ACCB2C31EE537F400F54D39 /* ProtocolBuffers_iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9A5EA51831993600A9D33B;
+			remoteInfo = iOSTestHarness;
+		};
+		9ACCB2D11EE537F400F54D39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9ACCB2C31EE537F400F54D39 /* ProtocolBuffers_iOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4487C6E1A9F8F8100531423;
+			remoteInfo = TestSingleSourceBuild;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9A0F8A8D1EE51C0B00485820 /* ProtocolBufferDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProtocolBufferDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +60,10 @@
 		9A0F8A9C1EE51C0B00485820 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A0F8A9F1EE51C0B00485820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A0F8AA11EE51C0B00485820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ACCB2C31EE537F400F54D39 /* ProtocolBuffers_iOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProtocolBuffers_iOS.xcodeproj; path = ProtocolBufferDemo/protocolbuf/ProtocolBuffers_iOS.xcodeproj; sourceTree = "<group>"; };
+		9ACCB2D51EE5429100F54D39 /* Person.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.pbobjc.h; sourceTree = "<group>"; };
+		9ACCB2D61EE5429100F54D39 /* Person.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.pbobjc.m; sourceTree = "<group>"; };
+		9ACCB2D71EE5429100F54D39 /* Person.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Person.proto; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ACCB2D31EE537FA00F54D39 /* libProtocolBuffers.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +81,7 @@
 		9A0F8A841EE51C0B00485820 = {
 			isa = PBXGroup;
 			children = (
+				9ACCB2C31EE537F400F54D39 /* ProtocolBuffers_iOS.xcodeproj */,
 				9A0F8A8F1EE51C0B00485820 /* ProtocolBufferDemo */,
 				9A0F8A8E1EE51C0B00485820 /* Products */,
 			);
@@ -58,6 +98,7 @@
 		9A0F8A8F1EE51C0B00485820 /* ProtocolBufferDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9ACCB2D41EE5429100F54D39 /* proto */,
 				9A0F8A931EE51C0B00485820 /* AppDelegate.h */,
 				9A0F8A941EE51C0B00485820 /* AppDelegate.m */,
 				9A0F8A961EE51C0B00485820 /* ViewController.h */,
@@ -77,6 +118,27 @@
 				9A0F8A911EE51C0B00485820 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9ACCB2C41EE537F400F54D39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9ACCB2CC1EE537F400F54D39 /* libProtocolBuffers.a */,
+				9ACCB2CE1EE537F400F54D39 /* UnitTests.xctest */,
+				9ACCB2D01EE537F400F54D39 /* iOSTestHarness.app */,
+				9ACCB2D21EE537F400F54D39 /* libTestSingleSourceBuild.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ACCB2D41EE5429100F54D39 /* proto */ = {
+			isa = PBXGroup;
+			children = (
+				9ACCB2D51EE5429100F54D39 /* Person.pbobjc.h */,
+				9ACCB2D61EE5429100F54D39 /* Person.pbobjc.m */,
+				9ACCB2D71EE5429100F54D39 /* Person.proto */,
+			);
+			path = proto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +188,12 @@
 			mainGroup = 9A0F8A841EE51C0B00485820;
 			productRefGroup = 9A0F8A8E1EE51C0B00485820 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9ACCB2C41EE537F400F54D39 /* Products */;
+					ProjectRef = 9ACCB2C31EE537F400F54D39 /* ProtocolBuffers_iOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9A0F8A8C1EE51C0B00485820 /* ProtocolBufferDemo */,
@@ -133,12 +201,44 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		9ACCB2CC1EE537F400F54D39 /* libProtocolBuffers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProtocolBuffers.a;
+			remoteRef = 9ACCB2CB1EE537F400F54D39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ACCB2CE1EE537F400F54D39 /* UnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.xctest;
+			remoteRef = 9ACCB2CD1EE537F400F54D39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ACCB2D01EE537F400F54D39 /* iOSTestHarness.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = iOSTestHarness.app;
+			remoteRef = 9ACCB2CF1EE537F400F54D39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9ACCB2D21EE537F400F54D39 /* libTestSingleSourceBuild.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTestSingleSourceBuild.a;
+			remoteRef = 9ACCB2D11EE537F400F54D39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		9A0F8A8B1EE51C0B00485820 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9A0F8AA01EE51C0B00485820 /* LaunchScreen.storyboard in Resources */,
+				9ACCB2D91EE5429100F54D39 /* Person.proto in Resources */,
 				9A0F8A9D1EE51C0B00485820 /* Assets.xcassets in Resources */,
 				9A0F8A9B1EE51C0B00485820 /* Main.storyboard in Resources */,
 			);
@@ -154,6 +254,7 @@
 				9A0F8A981EE51C0B00485820 /* ViewController.m in Sources */,
 				9A0F8A951EE51C0B00485820 /* AppDelegate.m in Sources */,
 				9A0F8A921EE51C0B00485820 /* main.m in Sources */,
+				9ACCB2D81EE5429100F54D39 /* Person.pbobjc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W395RC57B2;
+				HEADER_SEARCH_PATHS = "$(PROJECT)/protocolbuf ";
 				INFOPLIST_FILE = ProtocolBufferDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.putao.ProtocolBufferDemo;
@@ -286,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W395RC57B2;
+				HEADER_SEARCH_PATHS = "$(PROJECT)/protocolbuf ";
 				INFOPLIST_FILE = ProtocolBufferDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.putao.ProtocolBufferDemo;
@@ -312,6 +415,7 @@
 				9A0F8AA61EE51C0B00485820 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
